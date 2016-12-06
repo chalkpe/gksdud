@@ -2,9 +2,9 @@
   "name": "gksdud",
   "version": "1.0.0",
   "description": "Corrects miswritten Hangeul characters",
-  "main": "gksdud.js",
+  "main": "lib/gksdud.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha test.js"
+    "test": "./node_modules/.bin/mocha test/gksdud.js"
   },
   "repository": {
     "type": "git",
