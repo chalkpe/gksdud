@@ -1,0 +1,33 @@
+{
+  "name": "gksdud",
+  "version": "1.0.0",
+  "description": "Corrects miswritten Hangeul characters",
+  "main": "gksdud.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChalkPE/gksdud.git"
+  },
+  "keywords": [
+    "gksdud",
+    "korean",
+    "hangeul",
+    "hangul",
+    "ime"
+  ],
+  "author": "ChalkPE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChalkPE/gksdud/issues"
+  },
+  "homepage": "https://github.com/ChalkPE/gksdud#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  },
+  "engines": {
+    "node": ">= 6.2.1"
+  }
+}
