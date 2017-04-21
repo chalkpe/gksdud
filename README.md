@@ -1,4 +1,4 @@
-# gksdud
+# gksdud [![CircleCI](https://circleci.com/gh/ChalkPE/gksdud.svg?style=svg)](https://circleci.com/gh/ChalkPE/gksdud)
 Corrects miswritten Hangeul characters.  
 한영키를 안 누르고 잘못 친 한글을 고쳐 줍니다.
 
