@@ -1,7 +1,7 @@
 {
   "name": "gksdud",
   "version": "2.0.0",
-  "description": "Corrects miswritten Hangeul characters",
+  "description": "A tiny JavaScript utility that corrects miswritten Hangeul sentences like *gksdud*",
   "main": "lib/gksdud.js",
   "scripts": {
     "test": "mocha test/gksdud.js"
