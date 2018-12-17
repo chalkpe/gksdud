@@ -1,12 +1,14 @@
 # gksdud [![CircleCI](https://circleci.com/gh/ChalkPE/gksdud.svg?style=svg)](https://circleci.com/gh/ChalkPE/gksdud)
+
 Corrects miswritten Hangeul characters.  
 한영키를 안 누르고 잘못 친 한글을 고쳐 줍니다.
 
-`$ npm install gksdud --save`
+`yarn add gksdud`
 
 ## Usage
+
 ```js
-const gksdud = require('gksdud')
+import gksdud from 'gksdud'
 
 gksdud('ebsi') //듀나
 gksdud('Qkdtkd RofkdRofkd') //빵상 깨랑깨랑
@@ -14,7 +16,8 @@ gksdud('gksdudzlrk dks ehody') //한영키가 안 돼요
 ```
 
 ## License
-```
+
+```text
 MIT License
 
 Copyright (c) 2016 Chalk
