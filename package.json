@@ -1,8 +1,9 @@
 {
   "name": "gksdud",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A tiny JavaScript utility that corrects miswritten Hangeul sentences like *gksdud*",
   "main": "lib/gksdud.js",
+  "types": "lib/gksdud.d.ts",
   "scripts": {
     "test": "mocha test/gksdud.js"
   },
@@ -24,8 +25,8 @@
   },
   "homepage": "https://github.com/ChalkPE/gksdud#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "chai": "^4.3.4",
+    "mocha": "^9.0.2"
   },
   "engines": {
     "node": ">= 6.2.1"
