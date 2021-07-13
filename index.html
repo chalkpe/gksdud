@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gksdud demo</title>
+  <script src="./lib/gksdud.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css">
+  <style>
+    * {
+      font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    textarea {
+      margin: 0;
+      padding: 2rem;
+      flex-grow: 1;
+      resize: none;
+      border: none;
+      outline: none;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #fffe;
+      background-color: #222;
+    }
+
+    @media screen and (prefers-color-scheme: light) {
+      textarea {
+        color: #222e;
+        background-color: #fff;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <textarea id="input" placeholder="gksdud" autofocus autocomplete="off" spellcheck="false"></textarea>
+  <textarea id="output" placeholder="한영" readonly></textarea>
+  <script>
+    const input = document.getElementById('input');
+    const output = document.getElementById('output');
+    input.addEventListener('input', () => (output.value = gksdud(input.value)));
+  </script>
+</body>
+
+</html>
