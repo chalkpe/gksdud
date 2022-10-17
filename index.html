@@ -49,11 +49,14 @@
 
 <body>
   <textarea id="input" placeholder="gksdud" autofocus autocomplete="off" spellcheck="false"></textarea>
-  <textarea id="output" placeholder="한영" readonly></textarea>
+  <textarea id="output" placeholder="한영" autocomplete="off" spellcheck="false"></textarea>
   <script>
     const input = document.getElementById('input');
     const output = document.getElementById('output');
     input.addEventListener('input', () => (output.value = gksdud(input.value)));
+    input.addEventListener('focus', () => (output.value = gksdud(input.value)));
+    output.addEventListener('input', () => (input.value = reverseGksdud(output.value)));
+    output.addEventListener('focus', () => (input.value = reverseGksdud(output.value)));
   </script>
 </body>
 
