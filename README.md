@@ -24,3 +24,18 @@ gksdud('ebsi') //듀나
 gksdud('Qkdtkd RofkdRofkd') //빵상 깨랑깨랑
 gksdud('gksdudzlrk dks ehody') //한영키가 안 돼요
 ```
+### Reverse gksdud
+
+Use `reverseGksdud` to do the reverse operation
+
+```js
+import {reverseGksdud} from 'gksdud'
+
+reverseGksdud('듀나') // ebsi
+reverseGksdud('빵상 깨랑깨랑') // Qkdtkd RofkdRofkd
+reverseGksdud('ㅗ됴 ㅙㅈ ㅁㄱㄷ ㅛㅐㅕ?') // hey how are you?
+reverseGksdud('햣 ㅁㅇㅇ 내ㅕㄱㅊㄷ.ㅓㄴ') // git add source.js
+reverseGksdud(gksdud("HELLO THERE FRIEND")) // hEllO ThERE fRiEnd
+```
+
+Note: capitalization information is lost for most letters (typing `D` or `d` both give `ㅇ` for example). Also, it is not a rigourous reverse bijection of `gksdud`. Some mismatches can occur, i.e. For some `x`: ``reverseGksdud(gksdud(x)) !== x`` 
