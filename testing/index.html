@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<div>
+    <span id="exampleText">This is the example text</span>
+</div>
+<body>
+    <script type="module">
+        import {gksdud, reverseGksdud} from "../lib/gksdud.js";
+        console.log(gksdud("hola"));
+        console.log(reverseGksdud(gksdud("gksdud")));
+        console.log(reverseGksdud("aa퓛aa"));
+        
+
+        let text = document.getElementById("#exampleTest");
+        text.innerHTML = gksdud("hola");
+        
+    </script>
+</body>
+</html>
