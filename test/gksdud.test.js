@@ -1,4 +1,4 @@
-const expect = require('chai').expect;
+import { expect, describe, it } from 'vitest'
 
 describe('gksdud', function(){
     const gksdud = require('../lib/gksdud');
